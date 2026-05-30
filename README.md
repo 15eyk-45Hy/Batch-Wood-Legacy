@@ -24,9 +24,11 @@ Originally, it was never meant to be this massive. But over time, features kept 
 Let's dive into all the engine features below!
 
 ---
+<img src="workshop.png" align="right" width="300" alt="Workshop">
+<br>
+<br>
 <br>
 
-<img src="workshop.png" align="right" width="300" alt="Workshop">
 ## About the Game
 
 This game is all about resource management and crafting various items (there are about 30+ unique craftable recipes in total) to earn money by selling them on the market.
@@ -40,9 +42,9 @@ But if you want to uncover all the dark secrets of this universe... you'll have 
 
 <br clear="right"/>
 
-<img src="Savehub.png" align="right" width="300" alt="Save Hub">
 
 ## 🎮 Game Features & Content
+<img src="Savehub.png" align="right" width="300" alt="Save Hub">
 
 •  **Full Save & Load System** - Easily save your progress into dedicated slots and reload whenever you want.
 
