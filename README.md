@@ -5,8 +5,6 @@
 
 <br>
 <h3> ◄|► Navigation </h3>
-<br>
-<br>
 
 • [Scripting Hacks & Mechanics](#-scripting-hacks--mechanics)
 
@@ -142,7 +140,7 @@ Let's break down its syntax:
 • `"BeginMsg(Nobody:/1)/()"` - The speaker name tag (e.g., `%c7%Nobody%c0%:`) and its trailing padding.
 <br>
 
-Important Note: Do not use the / symbol in any text (whether it's the main message or the speaker tag),
+**Important Note**: Do not use the / symbol in any text (whether it's the main message or the speaker tag),
 otherwise the syntax parser will break.
 
 ---
@@ -205,7 +203,7 @@ for /l %%q in (0, 1, 2) do (
         echo                               ┌───────────────────────────┐
         echo                               !final_bar! !stageloadanim! %% │
         echo                               └───────────────────────────┘
-        echo     !curr_tip!
+        echo.     !curr_tip!
         
         ping -n 1 -w %~3 127.255.255.255 >nul
         
@@ -254,6 +252,61 @@ Usage:
 ```batch
 call :Engine_Anim_Progress_Bar " L  O  A  D  I  N  G" "   L  O  A  D  E  D" "1000" "2000"
 ```
+</details>
+
+This function has a more simplified syntax than the one specified above:
+<br>
+<br>
+• **`" L  O  A  D  I  N  G"`** - This is the text displayed while the process is running. [10% - 90%]
+
+• **`"   L  O  A  D  E  D"`** - This is the text displayed when the process is finished. [100%]
+
+• **`"1000"`** - The delay between iterations in milliseconds. [Total iterations 9]
+
+• **`"2000"`** - The screen delay after the process is completed in milliseconds. [For example, the screen delay for `L O A D E D` will be 2 seconds(2000 milliseconds)]
+
+• You can also create variables like "TIP(any number)", and their content will appear as a loading screen tip. [If you leave them out, the screen stays clean and crash-free.]
+<br>
+
+**Important Note**: If you want the same green color as shown in the screenshot, 
+just insert this mini-script at the beginning of your file:
+
+<details>
+<summary> Code <sub>(expand)</sub></summary>
+<br>
+
+```batch
+for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do set "ESC=%%b"
+
+set "c4=%ESC%[91m"
+set "c2=%ESC%[32m"
+set "c0=%ESC%[0m"
+set "c1=%ESC%[90m"
+set "c3=%ESC%[96m"
+set "c5=%ESC%[94m"
+set "c6=%ESC%[95m"
+set "c7=%ESC%[93m"
+set "c8=%ESC%[33m"
+```
+• `c0` - Color Reset
+• `c1` - Gray
+• `c2` - Green
+• `c3` - Cyan
+• `c4` - Red
+• `c5` - Blue
+• `c6` - Magenta
+• `c7` - Bright Yellow
+• `c8` - Dark Yellow
+
+Usage:
+
+```batch
+echo %c4% This text is Red %c0%
+```
+
+</details>
+
+
 
 
 
