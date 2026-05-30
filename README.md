@@ -29,7 +29,8 @@ Let's dive into all the engine features below!
 <br>
 <br>
 
-<h3> About the Game </h3>
+<h2> About the Game </h2>
+-
 
 This game is all about resource management and crafting various items (there are about 30+ unique craftable recipes in total) to earn money by selling them on the market.
 
