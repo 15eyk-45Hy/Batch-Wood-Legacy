@@ -37,7 +37,7 @@ But if you want to uncover all the dark secrets of this universe... you'll have 
 ---
 <br>
 
-<img src="workshop.png" align="right" width="300" alt="Игровой экран">
+<img src="workshop.png" align="right" width="300" alt="Workshop">
 
 ## 🎮 Game Features & Content
 
@@ -143,8 +143,12 @@ otherwise the syntax parser will break.
 
 ### 2. Dynamic Loading Bar with Live Tips
 
+<img src="loadbar.png" align="right" width="300" alt="Progress Bar">
+
 This script renders a smooth progress bar that fills up dynamically.
 While loading, it tracks the system time in seconds and rotates game tips every 3 seconds.
+
+<br clear="right"/>
 
 <details>
 <summary> Code <sub>(expand)</sub></summary>
