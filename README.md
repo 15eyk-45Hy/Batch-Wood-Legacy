@@ -65,7 +65,7 @@ But if you want to uncover all the dark secrets of this universe... you'll have 
 <br>
 
 ### 1. Character-by-Character Renderer
-This code creates a smooth typewriter effect to render text character-by-character.
+This script creates a smooth typewriter effect to render text character-by-character.
 
 <details>
 <summary> Code <sub>(expand)</sub></summary>
