@@ -9,7 +9,7 @@
 <br>
   
 * [](#how-it-all-started-dev-story)
-* [-About the Game-](#about-the-game)
+* [-About the Game-](#-about-the-game)
 
 </details>
 
