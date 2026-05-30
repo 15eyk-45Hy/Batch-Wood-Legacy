@@ -26,6 +26,7 @@ Let's dive into all the engine features below!
 ---
 <br>
 
+<img src="workshop.png" align="right" width="300" alt="Workshop">
 ## About the Game
 
 This game is all about resource management and crafting various items (there are about 30+ unique craftable recipes in total) to earn money by selling them on the market.
@@ -37,7 +38,9 @@ But if you want to uncover all the dark secrets of this universe... you'll have 
 ---
 <br>
 
-<img src="workshop.png" align="right" width="300" alt="Workshop">
+<br clear="right"/>
+
+<img src="Savehub.png" align="right" width="300" alt="Save Hub">
 
 ## 🎮 Game Features & Content
 
@@ -53,11 +56,6 @@ But if you want to uncover all the dark secrets of this universe... you'll have 
 
 <br clear="right"/>
 
-<div align="center">
-  <img src="Savehub.png" width="650" alt="Save Hub" style="border-radius: 8px;">
-  <br>
-  <sub><i>                     Save Hub</i></sub>
-</div>
 ---
 <br>
 
