@@ -37,25 +37,28 @@ But if you want to uncover all the dark secrets of this universe... you'll have 
 ---
 <br>
 
+<img src="workshop.png" align="right" width="300" alt="Игровой экран">
+
 ## 🎮 Game Features & Content
 
-•  **Full Save & Load System** — Easily save your progress into dedicated slots and reload whenever you want.
+•  **Full Save & Load System** - Easily save your progress into dedicated slots and reload whenever you want.
 
-•  **Progressive Workshop Levels** — Upgrade your workshop through 4+ distinct tiers to unlock advanced content.
+•  **Progressive Workshop Levels** - Upgrade your workshop through 4+ distinct tiers to unlock advanced content.
 
-•  **30+ Unique Crafting Recipes** — Discover, gather resources, and craft dozens of multi-level items.
+•  **30+ Unique Crafting Recipes** - Discover, gather resources, and craft dozens of multi-level items.
 
-•  **Dynamic Economy & Trading** — Buy materials, track price shifts, and dominate the market.
+•  **Dynamic Economy & Trading** - Buy materials, track price shifts, and dominate the market.
 
-•  **Secret Endgame Goals** — Uncover hidden blueprints, build the final rocket, and crack all the mysteries.
+•  **Secret Endgame Goals** - Uncover hidden blueprints, build the final rocket, and crack all the mysteries.
 
+<br clear="right"/>
 ---
 <br>
 
 ## Scripting Hacks & Mechanics
 <br>
 
-### 1.Character-by-Character Renderer
+### 1. Character-by-Character Renderer
 This code creates a smooth typewriter effect to render text character-by-character.
 
 <details>
@@ -121,3 +124,126 @@ Usage:
 call :Render_Msg "Msg(Hello World/4)" "SpaceDelay-true" "BeginMsg(Nobody:/1)"
 ```
 </details>
+
+Let's break down its syntax:
+
+• `"Msg(TEXT/PADDING)"` - The main message and its left padding size.
+
+• `"SpaceDelay-true/false"` - Toggles extra delay when a space character is processed.
+
+• `"BeginMsg(Nobody:/1)/()"` - The speaker name tag (e.g., `%c7%Nobody%c0%:`) and its trailing padding.
+<br>
+
+Important Note: Do not use the / symbol in any text (whether it's the main message or the speaker tag),
+otherwise the syntax parser will break.
+
+---
+<br>
+
+### 2. Dynamic Loading Bar with Live Tips
+
+This script renders a smooth progress bar that fills up dynamically.
+While loading, it tracks the system time in seconds and rotates game tips every 3 seconds.
+
+<details>
+<summary> Code <sub>(expand)</sub></summary>
+<br>
+
+```batch
+:Engine_Anim_Progress_Bar
+
+set "bar1=│ "
+set "bar2=░░░░░░░░░░░░░░░░░░░░"
+set "stageloadanim=0"
+set "curr_tick=0"
+set "last_tick=0"
+set "accumulator_time=0"
+set /a "tip_id=(%RANDOM% %% 6) + 1" 
+
+::Times
+set "hh=!time:~0,2!"
+set "mm=!time:~3,2!"
+set "ss=!time:~6,2!"
+set "hh=!hh: =0!"
+
+set /a "last_tick=(1!hh! - 100) * 3600 + (1!mm! - 100) * 60 + (1!ss! - 100)"
+
+
+set "curr_tip=TIP!tip_id!"
+for /f "delims=" %%r in ("!curr_tip!") do (
+    set "curr_tip=!%%r!"
+)
+
+cls
+for /l %%q in (0, 1, 2) do (
+    for %%v in (. .. ...) do (
+
+        set "flag1=%%v"
+        
+        set "bar2=!bar2:~0,-2!"
+        for /f "delims=" %%a in ("!bar1!") do set "bar1=!bar1!▓▓" 
+        
+        set "final_bar=!bar1!!bar2!"
+        
+        set /a "stageloadanim+=10"
+        set "stageloadanim=!stageloadanim!!space!"
+        set "stageloadanim=!stageloadanim:~0,3!"
+
+        echo.
+        echo                                 %~1!flag1!
+        echo                               ┌───────────────────────────┐
+        echo                               !final_bar! !stageloadanim!%% │
+        echo                               └───────────────────────────┘
+        echo     !curr_tip!
+        
+        ping -n 1 -w %~3 127.255.255.255 >nul
+        
+        ::Times
+        set "hh=!time:~0,2!"
+        set "mm=!time:~3,2!"
+        set "ss=!time:~6,2!"
+        set "hh=!hh: =0!"
+
+        
+        set /a "curr_tick=(1!hh! - 100) * 3600 + (1!mm! - 100) * 60 + (1!ss! - 100)"
+        
+        set /a "passed_time=curr_tick - last_tick"
+
+        if !passed_time! LSS 0 set /a "passed_time+=86400"
+        
+        set /a "accumulator_time+=passed_time"
+        
+        if !accumulator_time! GEQ 3 (
+            set /a "tip_id=(!RANDOM! %% 6) + 1"
+            set "curr_tip=TIP!tip_id!"
+
+            for /f "delims=" %%r in ("!curr_tip!") do (
+                set "curr_tip=!%%r!"
+            )
+            set "accumulator_time=0"
+        )
+        set "last_tick=!curr_tick!"
+        cls
+    )
+)
+set "final_bar=│ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
+echo.
+echo                                   %c2%%~2%c0%    
+echo                               ┌───────────────────────────┐
+echo                               !final_bar! 100%% │
+echo                               └───────────────────────────┘
+
+
+ping -n 1 -w %~4 127.255.255.255 >nul
+
+cls
+exit /b
+```
+Usage:
+```batch
+call :Engine_Anim_Progress_Bar "
+
+
+
+
+
