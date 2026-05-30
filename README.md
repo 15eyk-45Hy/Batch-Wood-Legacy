@@ -4,13 +4,11 @@
 #### using nothing but pure Windows Batch (CMD).
 
 <br>
-🧭 Navigation... <sub>(expand)</sub>
+◄|► Navigation
 <br>
-  
-* [Scripting Hacks & Mechanics](#-scripting-hacks--mechanics)
-* [-About the Game-](#-about-the-game)
-
-</details>
+  [Scripting Hacks & Mechanics](#-scripting-hacks--mechanics)
+  [-About the Game-](#-about-the-game
+<br>
 
 ## How It All Started (Dev Story)
 
