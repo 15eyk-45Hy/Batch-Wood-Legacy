@@ -1,14 +1,13 @@
 # 🚀 Batch Wood Legacy v1.2
 
 #### Hi everyone! I'm 13 years old, and I decided to build my first own full-scale game 
-#### using nothing but pure Windows Batch (CMD). 
+#### using nothing but pure Windows Batch (CMD).
+
 <br>
-<br>
-<details>
-<summary>🧭 Navigation... <sub>(expand)</sub></summary>
+🧭 Navigation... <sub>(expand)</sub>
 <br>
   
-* [](#how-it-all-started-dev-story)
+* [Scripting Hacks & Mechanics](#-scripting-hacks--mechanics)
 * [-About the Game-](#-about-the-game)
 
 </details>
@@ -61,7 +60,7 @@ But if you want to uncover all the dark secrets of this universe... you'll have 
 ---
 <br>
 
-## Scripting Hacks & Mechanics
+## ⚙ Scripting Hacks & Mechanics
 <br>
 
 ### 1. Character-by-Character Renderer
