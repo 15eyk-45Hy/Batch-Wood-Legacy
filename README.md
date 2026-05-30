@@ -315,6 +315,37 @@ echo %c4% This text is Red %c0%
 ```
 </details>
 
+---
+<br>
+<br>
+
+## How to Run
+
+To run this game, you don't even need any third-party programs - just Windows CMD (sorry, Linux users):
+
+<br>
+
+• 1. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
