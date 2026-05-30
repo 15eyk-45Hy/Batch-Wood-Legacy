@@ -257,6 +257,8 @@ call :Engine_Anim_Progress_Bar " L  O  A  D  I  N  G" "   L  O  A  D  E  D" "100
 This function has a more simplified syntax than the one specified above:
 <br>
 <br>
+<img src="loadbar1.png" align="right" width="300" alt="Progress Bar">
+
 • **`" L  O  A  D  I  N  G"`** - This is the text displayed while the process is running. [10% - 90%]
 
 • **`"   L  O  A  D  E  D"`** - This is the text displayed when the process is finished. [100%]
@@ -267,12 +269,13 @@ This function has a more simplified syntax than the one specified above:
 
 • You can also create variables like "TIP(any number)", and their content will appear as a loading screen tip. [If you leave them out, the screen stays clean and crash-free.]
 <br>
+<br clear="right"/>
 
 **Important Note**: If you want the same green color as shown in the screenshot, 
 just insert this mini-script at the beginning of your file:
 
 <details>
-<summary> Code <sub>(expand)</sub></summary>
+<summary> -Code <sub>(expand)</sub></summary>
 <br>
 
 ```batch
@@ -300,10 +303,16 @@ set "c8=%ESC%[33m"
 
 Usage:
 
+$\color{red}{\text{DON'T:}}$
+```batch
+echo %c4% This text is Red
+```
+<br>
+
+$\color{green}{\text{DO:}}$
 ```batch
 echo %c4% This text is Red %c0%
 ```
-
 </details>
 
 
