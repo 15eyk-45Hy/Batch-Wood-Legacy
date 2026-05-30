@@ -47,7 +47,7 @@ But if you want to uncover all the dark secrets of this universe... you'll have 
 
 •  **30+ Unique Crafting Recipes** - Discover, gather resources, and craft dozens of multi-level items.
 
-•  **Dynamic Economy & Trading** - Buy materials, track price shifts, and dominate the market.
+•  **Economy & Trading** -  Manage your resources, buy materials, and sell crafted items through a multi-page shop system.
 
 •  **Secret Endgame Goals** - Uncover hidden blueprints, build the final rocket, and crack all the mysteries.
 
@@ -193,7 +193,7 @@ for /l %%q in (0, 1, 2) do (
         echo.
         echo                                 %~1!flag1!
         echo                               ┌───────────────────────────┐
-        echo                               !final_bar! !stageloadanim!%% │
+        echo                               !final_bar! !stageloadanim! %% │
         echo                               └───────────────────────────┘
         echo     !curr_tip!
         
@@ -242,8 +242,8 @@ exit /b
 ```
 Usage:
 ```batch
-call :Engine_Anim_Progress_Bar "
-
+call :Engine_Anim_Progress_Bar " L  O  A  D  I  N  G" "   L  O  A  D  E  D" "1000" "2000"
+```
 
 
 
