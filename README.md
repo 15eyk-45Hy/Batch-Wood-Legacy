@@ -6,8 +6,10 @@
 <br>
 ◄|► Navigation
 <br>
-  [Scripting Hacks & Mechanics](#-scripting-hacks--mechanics)
-  [-About the Game-](#-about-the-game
+
+* [Scripting Hacks & Mechanics](#scripting-hacks--mechanics)
+* [About the Game](#-about-the-game)
+
 <br>
 
 ## How It All Started (Dev Story)
