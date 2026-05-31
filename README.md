@@ -11,7 +11,7 @@
 
 • [Scripting Hacks & Mechanics](#-scripting-hacks--mechanics)
 
-• [How to Run](#-how-to-run)
+• [How to Run](#how-to-run)
 
 <br>
 
