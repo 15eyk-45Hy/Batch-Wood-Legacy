@@ -24,7 +24,7 @@ Originally, it was never meant to be this massive. But over time, features kept 
 Let's dive into all the engine features below!
 
 ---
-<img src="workshop.png" align="right" width="300" alt="Workshop">
+<img src="assets/workshop.png" align="right" width="300" alt="Workshop">
 <br>
 <br>
 <br>
@@ -44,7 +44,7 @@ But if you want to uncover all the dark secrets of this universe... you'll have 
 
 
 ## ♦ Game Features & Content
-<img src="Savehub.png" align="right" width="300" alt="Save Hub">
+<img src="assets/Savehub.png" align="right" width="300" alt="Save Hub">
 
 •  **Full Save & Load System** - Easily save your progress into dedicated slots and reload whenever you want.
 
@@ -145,7 +145,7 @@ otherwise the syntax parser will break.
 
 ---
 <br>
-<img src="loadbar.png" align="right" width="300" alt="Progress Bar">
+<img src="assets/loadbar.png" align="right" width="300" alt="Progress Bar">
 
 ### 2. Dynamic Loading Bar with Live Tips
 
@@ -257,7 +257,7 @@ call :Engine_Anim_Progress_Bar " L  O  A  D  I  N  G" "   L  O  A  D  E  D" "100
 This function has a more simplified syntax than the one specified above:
 <br>
 <br>
-<img src="loadbar1.png" align="right" width="300" alt="Progress Bar">
+<img src="assets/loadbar1.png" align="right" width="300" alt="Progress Bar">
 
 • **`" L  O  A  D  I  N  G"`** - This is the text displayed while the process is running. [10% - 90%]
 
