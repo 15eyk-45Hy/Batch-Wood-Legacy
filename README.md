@@ -1,6 +1,7 @@
 # 🚀 Batch Wood Legacy v1.2
 
-#### Hi everyone! I'm 13 years old, and I decided to build my first own full-scale game 
+#### Hi everyone! I'm 13 years old, I live in a village, and I decided to build my very first full-scale game
+
 #### using nothing but pure Windows Batch (CMD).
 
 <br>
@@ -265,7 +266,8 @@ This function has a more simplified syntax than the one specified above:
 
 • **`"1000"`** - The delay between iterations in milliseconds. [Total iterations 9]
 
-• **`"2000"`** - The screen delay after the process is completed in milliseconds. [For example, the screen delay for `L O A D E D` will be 2 seconds(2000 milliseconds)]
+• **`"2000"`** - The screen delay after the process is completed in milliseconds. [For example,
+the screen delay for `L O A D E D` will be 2 seconds(2000 milliseconds)]
 
 • You can also create variables like "TIP(any number)", and their content will appear as a loading screen tip. [If you leave them out, the screen stays clean and crash-free.]
 <br>
@@ -321,11 +323,22 @@ echo %c4% This text is Red %c0%
 
 ## How to Run
 
-To run this game, you don't even need any third-party programs - just Windows CMD (sorry, Linux users):
+To run this game, you don't even need any third-party programs - just **Windows CMD** (sorry, Linux users):
 
 <br>
 
-• 1. 
+• 1. Look at the right side of this page and click on the **"Releases"** section (or click on the **"Latest"** green badge).
+
+• 2. Download the `BWL.zip` archive.
+
+• 3. Unpack (extract) the ZIP archive to any folder on your computer (**Do not play inside the ZIP file!**).
+
+• 4. Open the unpacked folder and run **`BWL-Launcher.bat`** (**the game launcher**).
+<br>
+
+**Important Note**: If you want a beautiful Icon Game >> Right-click on `BWL-Launcher.bat` >> *Create Shortcut* and move it to your Desktop. Right-click the shortcut >> *Properties* >> *Change Icon* >> *Browse* >> 
+open the game folder and select cool Icon **`BWLIcon.ico`**!  
+
 
 
 
