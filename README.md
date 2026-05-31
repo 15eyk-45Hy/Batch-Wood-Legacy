@@ -7,10 +7,11 @@
 <br>
 <h3> ◄|► Navigation </h3>
 
-• [Scripting Hacks & Mechanics](#-scripting-hacks--mechanics)
-
 • [About the Game](#-about-the-game)
 
+• [Scripting Hacks & Mechanics](#-scripting-hacks--mechanics)
+
+• [How to Run](#-how-to-run)
 
 <br>
 
