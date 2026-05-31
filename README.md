@@ -328,7 +328,7 @@ To run this game, you don't even need any third-party programs - just **Windows 
 
 <br>
 
-• 1. Look at the right side of this page and click on the **"Releases"** section (or click on the **"Latest"** green badge).
+• 1. Look at the right side of this page and click on the **"Releases"** section and choose **`Batch Wood Legacy`**
 
 • 2. Download the `BWL.zip` archive.
 
@@ -340,6 +340,9 @@ To run this game, you don't even need any third-party programs - just **Windows 
 **Important Note**: If you want a beautiful Icon Game >> Right-click on `BWL-Launcher.bat` >> *Create Shortcut* and move it to your Desktop. Right-click the shortcut >> *Properties* >> *Change Icon* >> *Browse* >> 
 open the game folder and select cool Icon **`BWLIcon.ico`**!  
 
+<br>
+<br>
+<br>
 
 
 
