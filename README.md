@@ -11,7 +11,7 @@
 
 • [Scripting Hacks & Mechanics](#-scripting-hacks--mechanics)
 
-• [How to Run](#how-to-run)
+• [How to Run](#-how-to-run)
 
 <br>
 
@@ -322,7 +322,7 @@ echo %c4% This text is Red %c0%
 <br>
 <br>
 
-## How to Run
+## ► How to Run
 
 To run this game, you don't even need any third-party programs - just **Windows CMD** (sorry, Linux users):
 
