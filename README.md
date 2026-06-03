@@ -1,6 +1,6 @@
 # 🚀 Batch Wood Legacy v1.2
 <p align="center">
-  <img src="assets/BWLIcon.ico" alt="Logo" width="128" height="128">
+  <img src="assets/BWLIcon.ico" alt="Logo" width="256" height="256">
 </p>
 #### Hi everyone! I'm 13 years old, I live in a village, and I decided to build my very first full-scale game
 
