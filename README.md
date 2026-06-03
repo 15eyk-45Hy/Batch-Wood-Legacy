@@ -29,7 +29,7 @@ Originally, it was never meant to be this massive. But over time, features kept 
 Let's dive into all the engine features below!
 
 ---
-<img src="assets/workshop.png" align="right" width="300" alt="Workshop">
+<img src="assets/workshop1.png" align="right" width="300" alt="Workshop">
 <br>
 <br>
 <br>
